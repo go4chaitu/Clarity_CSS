@@ -1,0 +1,194 @@
+.ppm_header_social {
+    position: absolute;   top: 3px;   left: 500px;   font-family: cursive;   font-weight: bold;   font-size: 15px;   color: white;
+    border:  1px;
+    border-color: rgb(211, 37, 37);
+}
+.ppm_header_social::before {
+    content: "Social";
+}
+.ppm_header_social_body {
+    position: fixed;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 999;
+    color:  green;
+    background-color: rgb(111, 113, 119);
+    opacity: 1.0;
+    margin: 1px;
+    padding: 1px;
+    border-color: black;
+
+    border-bottom: 3px;
+}
+.comments {
+    float: left;
+    width: 69%;
+    position: relative;
+    height: 97%;
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    overflow: auto;
+}
+.sidebar {
+    float: right;
+    position: relative;
+    width: 29.3%;
+    background-color: rgb(240, 240, 235);
+    height: 97%;
+    padding: 4px;
+    word-wrap: break-word;
+    font-family: serif;
+    color: rgb(17, 15, 15);
+}
+.social_body_header {
+    position: relative;
+    width: 100%;
+    height: 23px;
+    background-color: rgb(26, 40, 95);
+    margin-bottom: 2px;
+}
+.social_body_postbox {
+    position: relative;    
+    min-height: 15%;    
+    height: auto;
+    margin-top: 5px;
+    background: #fff;                    
+    margin-bottom: 10px;
+}
+.social_body_posts {
+    position: relative;  
+    float: left;  
+    width: 100%;
+    padding-bottom: 20px;    
+    margin-top: 10px;
+}
+.social_body_header li {
+    display: inline;
+    margin: 0% 2%;
+    color: rgb(252, 247, 247);
+    font-family: sans-serif;
+    font-weight: normal;
+    padding: 1px;
+}
+.post-box {
+    font-size: 14px;  border: 1px solid #ccc;  margin-left: 5px;    
+    line-height: 20px;  
+    position: relative;
+    background: transparent;  
+    float: left;
+    width: 78%;
+    min-height: 40px;
+    overflow: auto;
+    cursor: text;
+}
+.tags {
+    float: right;
+    width: 20%;
+    min-height: 40px;
+    position: relative;
+    font-size: 12px;
+    font-family: serif;
+}
+.buttons li {
+    clear: both;
+    display: inline;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 4px 4px;
+    cursor: pointer;
+    padding: 4px 20px;
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0, #ebf4fc), color-stop(.5, #d9e9fc), color-stop(.52, #c6ddf6), color-stop(1,#c3d3eb));
+}
+.buttons li:hover {
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0, #f8fbff), color-stop(.5, #e4effb), color-stop(.52, #d1e4f8), color-stop(1,#c5d5eb));
+
+}
+
+.buttons {
+    margin-top: 10px;
+}
+.posts_today:before {
+    border: 2px;
+    border-color: green;
+}
+.posts_header {
+    position: relative;
+    height: 20px;
+    clear: both;
+    width: 20%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    float: left;
+    background-color: rgb(71, 72, 75);
+    color: rgb(250, 250, 247);
+    font-family: cursive;
+    font-variant: normal;
+    font-weight: bold;
+    box-shadow: 0 3px 12px -2px rgb(50, 55, 65);
+    padding: 2px;
+}
+.posts_row {
+    position: relative;
+    clear: both;
+    min-height: 60px;
+    margin-top: 10px;
+    background-color: rgb(247, 247, 248);
+    width: 90%;
+    margin-left: 4px;
+    padding: 4px;
+}
+.profile {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 40px;
+    margin-left: 20px;
+    background: rgb(248, 247, 247);
+}
+.handle {
+    position: absolute;  left: 0;  width: 12px;  top: 0;  bottom: 0;  
+    background: rgb(225, 229, 248);  display: none;
+}
+.posts_row:hover > .handle {
+    display: block;    
+}
+.posts_row:hover {
+    box-shadow: 1px 2px 8px -2px rgb(16, 21, 51);
+}
+.my_profile {
+    position: relative;
+    float: left;
+    padding: 2px;
+    margin-left: 30px;
+    width: 70%;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 0px 2px 8px -2px rgb(23, 23, 26);
+}
+.my_groups {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 85%;
+    min-height: 80px;
+    background-color: white;
+    text-decoration: underline;
+    box-shadow: 0px 2px 8px -2px rgb(23, 23, 26);
+}
+.recent_activity {
+    float: left;  margin-left: 20px;  margin-top: 10px;  width: 85%;  min-height: 80px;  background-color: white;
+    text-decoration: underline;
+    box-shadow: 0px 2px 8px -2px rgb(23, 23, 26);
+}
+.social_body_header li:hover {
+    box-shadow: 1px 2px 18px -2px rgb(225, 226, 231);
+    background: -webkit-gradient(linear, center top, center bottom, color-stop(0, rgb(39, 47, 70)), color-stop(.5, rgb(196, 212, 231)), color-stop(.52, rgb(138, 150, 163)), color-stop(1,#c3d3eb));
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+}
