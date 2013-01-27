@@ -12,7 +12,6 @@ font-size: 15px;
 z-index: 2000;
 color: rgb(12, 12, 15);
 padding-left: 15px;
-background-color: #b1c2e5;
 }
 .ppm_header_social::before {
     content: "Social";
@@ -193,6 +192,7 @@ padding: 1px;
 }
 .posts_row:hover {
     box-shadow: 1px 2px 8px -2px rgb(16, 21, 51);
+    cursor: alias;
 }
 .my_profile {
     position: relative;
@@ -242,6 +242,7 @@ padding: 1px;
     background-color: #000;
     opacity: 0.4;
     z-index: 998;
+    display: none;
     position: fixed;
 }
 .my_profile li {
@@ -331,3 +332,48 @@ padding: 1px;
     margin-left: 50px;
     top: 55px;
 }
+.ppm_header_social:hover {
+position: absolute;
+top: 3px;
+left: 450px;
+height: 30px;
+width: 200px;
+text-decoration: underline;
+text-align: center;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 15px;
+z-index: 4000;
+color: rgb(29, 29, 49);
+padding-left: 15px;
+background-color: #b1c2e5;
+background-image: none;
+}
+.ppm_header_social {
+display: block;
+}
+.ppm_header_social {
+position: absolute;
+top: 3px;
+left: 550px;
+width: 20px;
+z-index: 2000;
+}
+
+.ppm_header_social:before {
+    content:"";
+}
+.ppm_header_social:hover .ppm_header_social_body {
+display: block;
+}
+.ppm_header_social .ppm_header_social_body {
+display: none;
+}
+.ppm_header_social:hover::before {
+content: "Social";
+color: rgb(11, 14, 27);
+}
+
+.ppm_header_social {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAWCAIAAAAqztkuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHBSURBVEhLY2Rg1GagPWAiyYptu+dt3jmXJC0QxYzE++b7j/NMLEwMf////P2bj8eUJMuI9c223XN+/Pjx/eu37z++//3ze/3WGTSxRkCI5/uvn99//vwKtOzXL2FhPppY8+Dhy1+/fv/89fvXj58/f/66c/8ZSdaQEDdHzywTExVi+Pfv5euPNmaRtLIGaO7tB9sY/jOoKnqRZAdQMZYkgCvVnru8joWRiZWV9fyVdVitwZPc0QMNV6p9/urAf5jZ////37xx49tXr6prlsHtw5/cUXyDJ9VysLFzc3FxsbGDEDvH08ePq6ur4XYQTO4o1uBJtZv3nN6846SAgOUmIGP3KVVd2zVbDsGtIZjcWZBDGZhqpcSFgSL///5lYGJCTrVxIXkQlXAGkRqxFzZkp1r8GrHkG1JT7eFD0IJHQk4OV3JHtwaYagX5uBiZmd9/+GyoE0R8/sCvkZmBUQxuFjDV8vBwsrCyMDMzc3NxqKkJWpor7dt3maBlBDUiUtqbd0fwp1pclhGjERFo67bO/PL9JxMD479//0GFw///QMTFyR7im4nfN8RoJKHoJBh0eBQQW61RYgf2opNCE7FqBwDaHCSfMfwHjgAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
